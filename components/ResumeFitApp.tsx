@@ -180,14 +180,17 @@ export function ResumeFitApp({ initialJobs }: { initialJobs: JobListing[] }) {
     if (authLoading) return;
     const key = user?.id ?? "guest";
     if (hydratedForUser.current === key) return;
-    hydratedForUser.current = key;
 
     let cancelled = false;
     dispatch({ type: "HYDRATE_START" });
 
     (async () => {
-      const cached = await loadCachedResume(signedIn);
+      const { resume: cached, shouldPromoteLocal } = await loadCachedResume(signedIn);
       if (cancelled) return;
+
+      // Only mark hydrated after a settled load (avoids Strict Mode stuck spinner).
+      hydratedForUser.current = key;
+
       if (!cached) {
         dispatch({ type: "HYDRATE_EMPTY" });
         return;
@@ -200,8 +203,8 @@ export function ResumeFitApp({ initialJobs }: { initialJobs: JobListing[] }) {
         step: cached.step,
       });
 
-      // Guest→account: promote local cache into Supabase.
-      if (signedIn) {
+      // Guest→account: promote local only when remote confirmed empty.
+      if (shouldPromoteLocal) {
         void saveCachedResume(true, cached);
       }
 
@@ -332,8 +335,8 @@ export function ResumeFitApp({ initialJobs }: { initialJobs: JobListing[] }) {
     }
   }
 
-  function handleRestart() {
-    void clearCachedResume(signedIn);
+  async function handleRestart() {
+    await clearCachedResume(signedIn);
     dispatch({ type: "RESTART" });
   }
 

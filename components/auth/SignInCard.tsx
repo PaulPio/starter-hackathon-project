@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { useAuth } from "@/components/auth/AuthProvider";
-import { GUEST_FLAG_KEY } from "@/lib/resume-cache";
 
 function GoogleIcon() {
   return (
@@ -75,11 +74,6 @@ export function SignInCard({ authError }: { authError?: boolean }) {
 
   function continueAsGuest() {
     setBusy("guest");
-    try {
-      sessionStorage.setItem(GUEST_FLAG_KEY, "1");
-    } catch {
-      // ignore
-    }
     router.push("/#demo");
   }
 

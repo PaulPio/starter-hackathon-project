@@ -5,7 +5,6 @@ import {
 } from "@/lib/schemas";
 
 export const LOCAL_RESUME_KEY = "resumefit_saved_resume";
-export const GUEST_FLAG_KEY = "resumefit_guest";
 
 /** Keep under typical localStorage quotas and jsonb row comfort. */
 export const MAX_RESUME_TEXT_CHARS = 200_000;
@@ -17,6 +16,11 @@ export interface CachedResume {
   resumeText: string;
   step: CachedResumeStep;
 }
+
+export type RemoteResumeLoad =
+  | { status: "ok"; data: CachedResume }
+  | { status: "empty" }
+  | { status: "error"; message: string };
 
 function parseCached(raw: unknown): CachedResume | null {
   if (!raw || typeof raw !== "object") return null;
@@ -66,12 +70,16 @@ export function clearLocalResume(): void {
   }
 }
 
-export async function loadRemoteResume(): Promise<CachedResume | null> {
+export async function loadRemoteResume(): Promise<RemoteResumeLoad> {
   const supabase = createClient();
   const {
     data: { user },
+    error: userError,
   } = await supabase.auth.getUser();
-  if (!user) return null;
+  if (userError) {
+    return { status: "error", message: userError.message };
+  }
+  if (!user) return { status: "empty" };
 
   const { data, error } = await supabase
     .from("saved_resumes")
@@ -79,24 +87,32 @@ export async function loadRemoteResume(): Promise<CachedResume | null> {
     .eq("user_id", user.id)
     .maybeSingle();
 
-  if (error || !data) return null;
-  return parseCached({
+  if (error) {
+    return { status: "error", message: error.message };
+  }
+  if (!data) return { status: "empty" };
+
+  const parsed = parseCached({
     profile: data.profile,
     resumeText: data.resume_text,
     step: data.step,
   });
+  if (!parsed) {
+    return { status: "error", message: "Saved resume failed validation." };
+  }
+  return { status: "ok", data: parsed };
 }
 
-export async function saveRemoteResume(data: CachedResume): Promise<void> {
-  if (!isResumeTextCacheable(data.resumeText)) return;
+export async function saveRemoteResume(data: CachedResume): Promise<boolean> {
+  if (!isResumeTextCacheable(data.resumeText)) return false;
 
   const supabase = createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return;
+  if (!user) return false;
 
-  await supabase.from("saved_resumes").upsert(
+  const { error } = await supabase.from("saved_resumes").upsert(
     {
       user_id: user.id,
       profile: data.profile,
@@ -106,24 +122,56 @@ export async function saveRemoteResume(data: CachedResume): Promise<void> {
     },
     { onConflict: "user_id" }
   );
+  if (error) {
+    console.error("[resume-cache] saveRemoteResume failed:", error.message);
+    return false;
+  }
+  return true;
 }
 
-export async function clearRemoteResume(): Promise<void> {
+export async function clearRemoteResume(): Promise<boolean> {
   const supabase = createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return;
-  await supabase.from("saved_resumes").delete().eq("user_id", user.id);
+  if (!user) return true;
+
+  const { error } = await supabase
+    .from("saved_resumes")
+    .delete()
+    .eq("user_id", user.id);
+  if (error) {
+    console.error("[resume-cache] clearRemoteResume failed:", error.message);
+    return false;
+  }
+  return true;
 }
 
-/** Prefer remote for signed-in users; fall back to local for guests. */
-export async function loadCachedResume(signedIn: boolean): Promise<CachedResume | null> {
+export type CachedResumeLoad = {
+  resume: CachedResume | null;
+  /** True when local should be upserted to Supabase (remote confirmed empty). */
+  shouldPromoteLocal: boolean;
+};
+
+/**
+ * Prefer remote for signed-in users. Never fall back to local on remote error
+ * (avoids overwriting cloud data with stale guest cache).
+ */
+export async function loadCachedResume(signedIn: boolean): Promise<CachedResumeLoad> {
   if (signedIn) {
     const remote = await loadRemoteResume();
-    if (remote) return remote;
+    if (remote.status === "ok") {
+      return { resume: remote.data, shouldPromoteLocal: false };
+    }
+    if (remote.status === "error") {
+      console.error("[resume-cache] loadRemoteResume failed:", remote.message);
+      return { resume: null, shouldPromoteLocal: false };
+    }
+    // Remote empty — allow promoting a local guest cache once.
+    const local = loadLocalResume();
+    return { resume: local, shouldPromoteLocal: Boolean(local) };
   }
-  return loadLocalResume();
+  return { resume: loadLocalResume(), shouldPromoteLocal: false };
 }
 
 export async function saveCachedResume(
@@ -132,7 +180,6 @@ export async function saveCachedResume(
 ): Promise<void> {
   if (signedIn) {
     await saveRemoteResume(data);
-    // Keep a local copy so a brief offline moment still works.
     saveLocalResume(data);
     return;
   }

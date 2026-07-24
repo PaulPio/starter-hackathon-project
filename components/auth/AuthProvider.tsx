@@ -41,12 +41,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const supabase = createClient();
     let cancelled = false;
 
-    supabase.auth.getUser().then(({ data }) => {
-      if (!cancelled) {
-        setUser(data.user);
-        setLoading(false);
-      }
-    });
+    supabase.auth
+      .getUser()
+      .then(({ data }) => {
+        if (!cancelled) {
+          setUser(data.user);
+        }
+      })
+      .catch((err) => {
+        console.error("[auth] getUser failed:", err);
+        if (!cancelled) {
+          setUser(null);
+        }
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      });
 
     const {
       data: { subscription },
