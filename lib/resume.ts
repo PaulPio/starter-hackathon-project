@@ -9,6 +9,12 @@ Contact info: extract "email", "phone", "linkedin", and "github" from the resume
 (linkedin/github as full URLs or usernames as written — don't invent or guess ones that aren't
 in the text). Use null for any that aren't present.
 
+Projects: extract a "projects" array from any PROJECTS / personal-projects / selected-work section
+in the resume. For each project include "name", "url" (null if not written), "bullets" (as written),
+and "technologies" (languages/frameworks named for that project, or [] if none). Do not invent
+projects, URLs, or tech that are not in the resume text. Do not fetch or guess GitHub repos —
+only what appears on the resume. Use an empty array if there is no projects section.
+
 Health-check guidance:
 - Many strong candidates get filtered out by automated screening for formatting or
   phrasing reasons, not skill gaps. Flag those issues plainly and kindly.

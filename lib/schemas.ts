@@ -1,5 +1,13 @@
 import { z } from "zod";
 
+export const ProjectSchema = z.object({
+  name: z.string(),
+  url: z.string().nullable(),
+  bullets: z.array(z.string()),
+  technologies: z.array(z.string()).default([]),
+});
+export type Project = z.infer<typeof ProjectSchema>;
+
 export const ResumeProfileSchema = z.object({
   name: z.string().nullable(),
   contact: z.object({
@@ -32,6 +40,7 @@ export const ResumeProfileSchema = z.object({
       bullets: z.array(z.string()),
     })
   ),
+  projects: z.array(ProjectSchema).default([]),
   targetRoles: z.array(z.string()),
   healthCheck: z.object({
     overallScore: z.number().min(0).max(100),
@@ -80,15 +89,49 @@ export const RankingResponseSchema = z.object({
 });
 export type RankingResponse = z.infer<typeof RankingResponseSchema>;
 
+const BulletDiffSchema = z.object({
+  original: z.string(),
+  tailored: z.string(),
+  reason: z.string(),
+});
+
 export const TailorResponseSchema = z.object({
   tailoredSummary: z.string(),
-  tailoredBullets: z.array(
-    z.object({
-      original: z.string(),
-      tailored: z.string(),
-      reason: z.string(),
-    })
-  ),
+  tailoredBullets: z.array(BulletDiffSchema),
+  tailoredProjects: z
+    .array(
+      z.object({
+        name: z.string(),
+        url: z.string().nullable(),
+        bullets: z.array(BulletDiffSchema),
+      })
+    )
+    .default([]),
+  // Names of resume projects to KEEP, in display order. Omit a name to drop it
+  // from the one-page PDF (swap/reorder by changing this list's order).
+  projectOrder: z.array(z.string()).default([]),
+  removedProjects: z
+    .array(
+      z.object({
+        name: z.string(),
+        reason: z.string(),
+      })
+    )
+    .default([]),
+  // Reorder / drop skills from the candidate's existing list only — never invent.
+  tailoredSkills: z.array(z.string()).default([]),
+  skillsReason: z.string().default(""),
+  addedGithubProjects: z
+    .array(
+      z.object({
+        name: z.string(),
+        url: z.string(),
+        bullets: z.array(z.string()),
+        technologies: z.array(z.string()),
+        reason: z.string(),
+      })
+    )
+    .default([]),
 });
 export type TailorResponse = z.infer<typeof TailorResponseSchema>;
 
@@ -117,6 +160,7 @@ export const ResumePdfDataSchema = z.object({
       bullets: z.array(z.string()),
     })
   ),
+  projects: z.array(ProjectSchema).default([]),
   targetJobLabel: z.string(),
 });
 export type ResumePdfData = z.infer<typeof ResumePdfDataSchema>;

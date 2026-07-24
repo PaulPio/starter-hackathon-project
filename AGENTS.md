@@ -40,18 +40,20 @@ empty schemas against zod v4). `unpdf` for PDF text extraction, `pdf-lib` for PD
 ## Architecture / data flow
 
 ```
-Upload PDF ──► POST /api/parse-resume ──► ResumeProfile (+ raw resumeText)
-                                                │
-                                                ▼
-                                          POST /api/rank ──► RankedJob[]
-                                                │
-                                          user picks one job
-                                                ▼
-                                          POST /api/tailor ──► TailorResponse (summary + bullets)
-                                                │
-                                          client merges profile.workExperience + tailoredBullets
-                                                ▼
-                                          POST /api/download-resume ──► PDF bytes (no LLM call)
+Upload PDF ──► POST /api/parse-resume ──► ResumeProfile (+ raw resumeText, including projects)
+                                    │
+                                    ▼
+                          POST /api/rank ──► RankedJob[]
+                                    │
+                          user picks one job
+                                    ▼
+                          POST /api/tailor ──► TailorResponse
+                            (fetches public GitHub repos if contact.github is set;
+                             faithful bullet rewrites + optional GitHub project adds)
+                                    │
+                          client merges profile + tailored work/project bullets
+                                    ▼
+                          POST /api/download-resume ──► PDF bytes (no LLM call)
 ```
 
 All four API routes: `export const runtime = "nodejs"` + `export const maxDuration = 60`
@@ -67,14 +69,16 @@ overlay. `app/page.tsx` is the one Server Component — it prefetches `/api/jobs
 
 ```
 lib/
-  config.ts                   GEMMA_MODEL_ID, JOBS_SOURCE_URL, size limits
+  config.ts                   GEMMA_MODEL_ID, JOBS_SOURCE_URL, size limits, optional GITHUB_TOKEN
   openrouter.ts                OpenAI SDK client pointed at OpenRouter
   llm.ts                       getStructuredJSON() — the ONE call site every LLM
                                 interaction goes through. Read this before adding new
                                 LLM calls or touching prompts.
   schemas.ts                   every zod schema — source of truth for data shapes
   resume.ts / rank.ts / tailor.ts   one file per pipeline stage: prompt + call function
-  resume-pdf.ts                runtime PDF GENERATION (word-wrap + pagination, pdf-lib)
+  github.ts                    tailor-time public repo fetch (username parse + GitHub API)
+  resume-pdf.ts                runtime PDF GENERATION — hard one-page layout (no page 2),
+                                base-resume-like sections (no AI summary on the PDF)
   pdf.ts                       PDF text EXTRACTION (unpdf) — do not confuse with resume-pdf.ts
   markdown-table-parser.ts, jobs-source.ts   speedyapply README parsing + snapshot fallback
 app/api/
@@ -87,7 +91,7 @@ data/
   jobs-snapshot.json           committed fallback — a network hiccup can't blank the demo
   sample-resume.pdf            bundled "try sample" asset
 scripts/
-  build-jobs-snapshot.ts, generate-sample-resume.ts, verify-pdf.ts, test-llm.ts   dev utilities
+  build-jobs-snapshot.ts, generate-sample-resume.ts, verify-pdf.ts, test-llm.ts, test-github.ts   dev utilities
 ```
 
 ## Things that will bite you if you don't know them
@@ -122,7 +126,8 @@ npm run dev
 ```
 
 Required env vars (see `lib/config.ts` for defaults): `OPENROUTER_API_KEY` (no default),
-`GEMMA_MODEL_ID`, `JOBS_SOURCE_URL`, `NEXT_PUBLIC_APP_URL`.
+`GEMMA_MODEL_ID`, `JOBS_SOURCE_URL`, `NEXT_PUBLIC_APP_URL`. Optional: `GITHUB_TOKEN` (raises
+rate limits for tailor-time public repo fetch; unauthenticated still works).
 
 Useful scripts: `npm run build:jobs-snapshot` (re-fetch + re-parse job listings; refuses to
 overwrite on a 0-job parse), `npm run build:sample-resume`, `npx tsx scripts/verify-pdf.ts

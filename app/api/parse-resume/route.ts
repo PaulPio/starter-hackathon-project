@@ -18,6 +18,7 @@ function fallbackProfile(): ResumeProfile {
     experienceLevel: "student",
     education: [],
     workExperience: [],
+    projects: [],
     targetRoles: [],
     healthCheck: {
       overallScore: 0,
