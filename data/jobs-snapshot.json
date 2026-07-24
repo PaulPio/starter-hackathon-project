@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "283a2db9ce1d",
+    "company": "Google",
+    "position": "Software Engineering Intern - MS - Summer 2027",
+    "location": "Mountain View, CA +29",
+    "salary": "$72/hr",
+    "link": "https://www.google.com/about/careers/applications/jobs/results/95141459539174086",
+    "age": "3d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "1ac4fdc1f4a8",
+    "company": "Google",
+    "position": "Software Engineering Intern - BS - Summer 2027",
+    "location": "Mountain View, CA +29",
+    "salary": "$72/hr",
+    "link": "https://www.google.com/about/careers/applications/jobs/results/85564713261245126",
+    "age": "3d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "9aa7858a12e6",
+    "company": "NVIDIA",
+    "position": "Performance Engineer Intern - Systems Software- Fall 2026",
+    "location": "St. Louis, MO",
+    "salary": "$62/hr",
+    "link": "https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/US-MO-St-Louis/Performance-Engineer-Intern--Systems-Software---Fall-2026_JR2015779",
+    "age": "18d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "7c2d6e6efdad",
+    "company": "NVIDIA",
+    "position": "PhD Research Intern - System Software and I/O Architecture - Fall 2026",
+    "location": "Remote - Santa Clara, CA +2",
+    "salary": "$62/hr",
+    "link": "https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/US-CA-Santa-Clara/PhD-Research-Intern--System-Software-and-I-O-Architecture---Fall-2026_JR2019667",
+    "age": "30d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "64ccca7b1b62",
+    "company": "TikTok",
+    "position": "Frontend Software Engineer Project Intern - Global CRM - 2026 Start（BS/MS）",
+    "location": "San Jose, CA",
+    "salary": "$60/hr",
+    "link": "https://lifeattiktok.com/search/7654431844394322229",
+    "age": "31d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "16edde5f1c20",
+    "company": "Rivian",
+    "position": "Software Engineering Intern - Connected Systems - Fall 2026",
+    "location": "Irvine, CA +1",
+    "salary": "$51/hr",
+    "link": "https://jobs.ashbyhq.com/rivianvw.tech/50e43cbe-01ea-4b8b-be4c-bb5f48a2be92",
+    "age": "50d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "55725fc45031",
+    "company": "Rivian",
+    "position": "Android Developer Intern - Fall 2026",
+    "location": "Palo Alto, CA",
+    "salary": "$51/hr",
+    "link": "https://jobs.ashbyhq.com/rivianvw.tech/5633bb03-cc16-47fc-af02-db9dc355eddd",
+    "age": "50d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "aa02d7da95af",
+    "company": "Rivian",
+    "position": "Software Engineering Intern - Applications - Fall 2026",
+    "location": "Irvine, CA +1",
+    "salary": "$51/hr",
+    "link": "https://jobs.ashbyhq.com/rivianvw.tech/3f314ca7-978e-4ad6-b527-0487a9a9598c",
+    "age": "50d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "e3d36b806e73",
+    "company": "Rivian",
+    "position": "Software Engineering Intern - Vehicle Controls - Fall 2026",
+    "location": "Irvine, CA +1",
+    "salary": "$51/hr",
+    "link": "https://jobs.ashbyhq.com/rivianvw.tech/89feb2fe-c28c-4dad-846f-09594632ba55",
+    "age": "50d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "b61e37df9687",
+    "company": "Rivian",
+    "position": "Software Engineering Intern - Embedded Platforms - Fall 2026",
+    "location": "Palo Alto, CA +1",
+    "salary": "$51/hr",
+    "link": "https://jobs.ashbyhq.com/rivianvw.tech/4dfbf1e6-3778-4101-8ac7-cd4015d47eff",
+    "age": "51d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "867b27dd2452",
+    "company": "NVIDIA",
+    "position": "DGX Cloud Kubernetes Runtime Intern - Fall 2026",
+    "location": "Santa Clara, CA",
+    "salary": "$62/hr",
+    "link": "https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/US-CA-Santa-Clara/DGX-Cloud-Kubernetes-Runtime-Intern---Fall-2026_JR2009619",
+    "age": "52d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "a43a6091b752",
+    "company": "TikTok",
+    "position": "AI software Engineer Project Intern - Transaction Platform - 2026 Start - BS/MS",
+    "location": "San Jose, CA",
+    "salary": "$60/hr",
+    "link": "https://lifeattiktok.com/search/7646621925436131637",
+    "age": "52d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "516db5508cb8",
+    "company": "Apple",
+    "position": "Software PhD Internships",
+    "location": "USA",
+    "salary": "$47/hr",
+    "link": "https://jobs.apple.com/en-us/details/200664323-3810",
+    "age": "63d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "5680eaad23a2",
+    "company": "Apple",
+    "position": "Software Engineering Masters Internships",
+    "location": "USA",
+    "salary": "$47/hr",
+    "link": "https://jobs.apple.com/en-us/details/200664320-3810",
+    "age": "63d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "5d883b05ee12",
+    "company": "Apple",
+    "position": "Software Undergrad Engineering Internships",
+    "location": "USA",
+    "salary": "$47/hr",
+    "link": "https://jobs.apple.com/en-us/details/200664785-3810",
+    "age": "63d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "0d3d582af6e6",
+    "company": "NVIDIA",
+    "position": "PhD Software Engineering Intern - Decision Intelligence - Fall 2026",
+    "location": "Santa Clara, CA",
+    "salary": "$62/hr",
+    "link": "https://nvidia.wd5.myworkdayjobs.com/en-US/nvidiaexternalcareersite/job/US-CA-Santa-Clara/PhD-Software-Engineering-Intern--Decision-Intelligence---Fall-2026_JR2017522",
+    "age": "63d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "cf5e0509d91d",
+    "company": "Meta",
+    "position": "Research Scientist Intern - Embedded Contextual AI on Wearables - PhD",
+    "location": "Sunnyvale, CA +1",
+    "salary": "$50/hr",
+    "link": "https://www.metacareers.com/jobs/2160167211413098",
+    "age": "69d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "d26ee44f9787",
+    "company": "TikTok",
+    "position": "Software Engineer Intern - Quality and Efficiency Technology - 2026 Summer - BS/MS",
+    "location": "San Jose, CA",
+    "salary": "$60/hr",
+    "link": "https://lifeattiktok.com/search/7637047421538404613",
+    "age": "78d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "e780c5076a52",
+    "company": "Amazon",
+    "position": "Software Development Engineer Intern - AWS Data Services - Fall 2026 - US",
+    "location": "Seattle, WA",
+    "salary": "$53/hr",
+    "link": "https://www.amazon.jobs/jobs/10412530/apply",
+    "age": "93d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "297240c8a888",
+    "company": "TikTok",
+    "position": "Software Engineer Project Intern - Recommendation Infrastructure - TikTok Video Social - 2026 Start - BS/MS",
+    "location": "San Jose, CA",
+    "salary": "$60/hr",
+    "link": "https://lifeattiktok.com/search/7629500062003218741",
+    "age": "98d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "74a2231ea2fd",
+    "company": "TikTok",
+    "position": "Software Engineer Project Intern - Model Infrastructure - 2026 Start - BS/MS",
+    "location": "San Jose, CA",
+    "salary": "$60/hr",
+    "link": "https://lifeattiktok.com/search/7624284785283746053",
+    "age": "112d",
+    "category": "FAANG+"
+  },
+  {
+    "id": "8b4dec164e02",
+    "company": "Citadel",
+    "position": "Software Engineer - Intern - US",
+    "location": "Houston, TX +2",
+    "salary": "$125/hr",
+    "link": "https://www.citadel.com/careers/details/software-engineer-intern-us/",
+    "age": "9d",
+    "category": "Quant"
+  },
+  {
+    "id": "8be196738700",
+    "company": "Citadel Securities",
+    "position": "Software Engineer - Intern - US",
+    "location": "Miami, FL +1",
+    "salary": "$125/hr",
+    "link": "https://www.citadelsecurities.com/careers/details/software-engineer-intern-us/",
+    "age": "9d",
+    "category": "Quant"
+  },
+  {
+    "id": "432de1bfd236",
+    "company": "Five Rings",
+    "position": "Summer Intern 2027 - Software Developer",
+    "location": "New York City, NY",
+    "salary": "$144/hr",
+    "link": "https://job-boards.greenhouse.io/fiveringsllc/jobs/5349707008",
+    "age": "9d",
+    "category": "Quant"
+  },
+  {
+    "id": "4c49cdb82372",
+    "company": "Akuna Capital",
+    "position": "Software Engineer Intern - Full Stack Web - Summer 2027",
+    "location": "Chicago, IL",
+    "salary": "$75/hr",
+    "link": "https://www.akunacapital.com/careers/job/8018893/?gh_jid=8018893",
+    "age": "10d",
+    "category": "Quant"
+  },
+  {
+    "id": "286560f4752c",
+    "company": "Akuna Capital",
+    "position": "Software Engineer Intern - C++ - Summer 2027",
+    "location": "Chicago, IL",
+    "salary": "$75/hr",
+    "link": "https://www.akunacapital.com/careers/job/8018847/?gh_jid=8018847",
+    "age": "10d",
+    "category": "Quant"
+  },
+  {
+    "id": "5dbb4ed68c49",
+    "company": "Akuna Capital",
+    "position": "Software Engineer Intern - Python - Summer 2027",
+    "location": "Chicago, IL",
+    "salary": "$75/hr",
+    "link": "https://www.akunacapital.com/careers/job/8018853/?gh_jid=8018853",
+    "age": "10d",
+    "category": "Quant"
+  },
+  {
+    "id": "d0d3e5a4956e",
+    "company": "Akuna Capital",
+    "position": "Software Engineer Intern - C# .NET Desktop - Summer 2027",
+    "location": "Chicago, IL",
+    "salary": "$75/hr",
+    "link": "https://www.akunacapital.com/careers/job/8018886/?gh_jid=8018886",
+    "age": "10d",
+    "category": "Quant"
+  },
+  {
+    "id": "4baa80a31a7e",
+    "company": "Hudson River Trading",
+    "position": "Software Engineering Internship - C++ or Python - Summer 2027",
+    "location": "London, United Kingdom +4",
+    "salary": "$145/hr",
+    "link": "https://www.hudsonrivertrading.com/careers/job/?gh_jid=8052083",
+    "age": "10d",
+    "category": "Quant"
+  },
+  {
+    "id": "2b0bcad8b8a8",
+    "company": "Jump Trading",
+    "position": "Campus Software Engineer - Intern",
+    "location": "Chicago, IL",
+    "salary": "$138/hr",
+    "link": "https://www.jumptrading.com/hr/job?gh_jid=8002989",
+    "age": "15d",
+    "category": "Quant"
+  },
+  {
+    "id": "f5c6944d965a",
+    "company": "Jump Trading",
+    "position": "Campus UI Software Engineer - Intern",
+    "location": "Chicago, IL",
+    "salary": "$138/hr",
+    "link": "https://www.jumptrading.com/hr/job?gh_jid=8003019",
+    "age": "15d",
+    "category": "Quant"
+  },
+  {
+    "id": "0efccee2fc26",
+    "company": "Jane Street",
+    "position": "Software Engineer Winter Co-Op",
+    "location": "New York City, NY",
+    "salary": "$120/hr",
+    "link": "https://www.janestreet.com/join-jane-street/position/8419303002",
+    "age": "17d",
+    "category": "Quant"
+  },
+  {
+    "id": "b96c6348932f",
+    "company": "Jane Street",
+    "position": "Software Engineer Summer Internship",
+    "location": "New York City, NY",
+    "salary": "$120/hr",
+    "link": "https://www.janestreet.com/join-jane-street/position/8599644002",
+    "age": "17d",
+    "category": "Quant"
+  },
+  {
+    "id": "7e26941bf482",
+    "company": "Optiver",
+    "position": "Software Engineer Intern - Summer 2027 - Chicago",
+    "location": "Chicago, IL",
+    "salary": "$125/hr",
+    "link": "https://www.optiver.com/join-us/jobs/8604760002/?gh_jid=8604760002",
+    "age": "22d",
+    "category": "Quant"
+  },
+  {
+    "id": "6f940ee0ce3a",
+    "company": "Optiver",
+    "position": "Software Engineer Intern - Summer 2027 - Austin",
+    "location": "Austin, TX",
+    "salary": "$125/hr",
+    "link": "https://www.optiver.com/join-us/jobs/8401052002/?gh_jid=8401052002",
+    "age": "22d",
+    "category": "Quant"
+  },
+  {
+    "id": "093aaf26b0dc",
+    "company": "D. E. Shaw & Co.",
+    "position": "Quantitative Analyst and Software Developer Intern - Summer 2027",
+    "location": "New York City, NY",
+    "salary": "$127/hr",
+    "link": "https://www.deshaw.com/careers/5906",
+    "age": "78d",
+    "category": "Quant"
+  },
+  {
+    "id": "d491e82ce2e6",
+    "company": "D. E. Shaw & Co.",
+    "position": "Software Developer Intern - New York - Summer 2027",
+    "location": "New York City, NY",
+    "salary": "$127/hr",
+    "link": "https://www.deshaw.com/careers/5894",
+    "age": "86d",
+    "category": "Quant"
+  },
+  {
+    "id": "733d01968993",
+    "company": "D. E. Shaw & Co.",
+    "position": "Software Developer - Ph.D. Intern - New York - Summer 2027",
+    "location": "New York City, NY",
+    "salary": "$127/hr",
+    "link": "https://www.deshaw.com/careers/5893",
+    "age": "86d",
+    "category": "Quant"
+  },
+  {
+    "id": "c95a9b75da57",
+    "company": "Anthelion Capital",
+    "position": "Quant Developer / Quant Research Intern - 2026/2027",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/anthelioncap/5e2ea37b-2369-474e-b717-c24c60976e96",
+    "age": "0d",
+    "category": "Other"
+  },
+  {
+    "id": "1d1e2c9ab45a",
+    "company": "Appian",
+    "position": "Software Engineering Intern",
+    "location": "McLean, VA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/appian/jobs/8041237",
+    "age": "0d",
+    "category": "Other"
+  },
+  {
+    "id": "45bac76434a3",
+    "company": "Astranis Space Technologies",
+    "position": "Software Engineer Intern - Enterprise Systems - Fall 2026",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/astranis/jobs/4699071006",
+    "age": "0d",
+    "category": "Other"
+  },
+  {
+    "id": "af6e9d42182a",
+    "company": "HP",
+    "position": "Software Engineering Intern - Device Experiences",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://hp.wd5.myworkdayjobs.com/en-US/exteu-ac-careersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166",
+    "age": "2d",
+    "category": "Other"
+  },
+  {
+    "id": "7cf746172e19",
+    "company": "HP",
+    "position": "Software Engineering Intern - Device Experiences",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://hp.wd5.myworkdayjobs.com/en-US/externalcareersite/job/San-Francisco-California-United-States-of-America/Software-Engineering-Intern--Device-Experiences_3164166-1",
+    "age": "2d",
+    "category": "Other"
+  },
+  {
+    "id": "dff124049bc4",
+    "company": "Mathtech",
+    "position": "Web Application Developer Intern",
+    "location": "Falls Church, VA",
+    "salary": null,
+    "link": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=cf1a92f4-16eb-4267-86ca-bc956024f426&jobId=565843",
+    "age": "2d",
+    "category": "Other"
+  },
+  {
+    "id": "942b42967310",
+    "company": "Moog",
+    "position": "Intern - Software Engineering",
+    "location": "Buffalo, NY",
+    "salary": null,
+    "link": "https://moog.wd5.myworkdayjobs.com/en-US/moog_external_career_site/job/Buffalo-NY/Intern--Software-Engineering_R-26-18885-1",
+    "age": "2d",
+    "category": "Other"
+  },
+  {
+    "id": "a822f8d53f88",
+    "company": "Virtu Financial",
+    "position": "2027 Internship - Software Engineer",
+    "location": "Austin, TX +1",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/virtu/jobs/8624410002",
+    "age": "2d",
+    "category": "Other"
+  },
+  {
+    "id": "b3b32631d824",
+    "company": "Bild AI",
+    "position": "AI/SWE Intern",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/bild-ai/b333f0f7-0ca6-4509-8697-9303396b5364",
+    "age": "3d",
+    "category": "Other"
+  },
+  {
+    "id": "6af46c4cfb95",
+    "company": "Chicago Trading Company",
+    "position": "Software Engineering Internship - Summer 2027",
+    "location": "Chicago, IL",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/ctccampusboard/jobs/4708230005",
+    "age": "3d",
+    "category": "Other"
+  },
+  {
+    "id": "b66fce2d0e63",
+    "company": "Copart",
+    "position": "Software Engineering Intern",
+    "location": "Dallas, TX",
+    "salary": null,
+    "link": "https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR110011",
+    "age": "3d",
+    "category": "Other"
+  },
+  {
+    "id": "c15401bf3fa4",
+    "company": "Gritt Robotics",
+    "position": "ML & Cloud Infrastructure Engineer Intern",
+    "location": "South San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/gritt/46af6e69-40fc-4e53-940e-a99757137523",
+    "age": "3d",
+    "category": "Other"
+  },
+  {
+    "id": "4d4145ea7a73",
+    "company": "SEL",
+    "position": "Software Engineer Intern",
+    "location": "Boise, ID",
+    "salary": null,
+    "link": "https://selinc.wd1.myworkdayjobs.com/en-US/sel/job/Idaho---Boise/Software-Engineer-Intern_2026-22321",
+    "age": "3d",
+    "category": "Other"
+  },
+  {
+    "id": "3831cd3fac2b",
+    "company": "Copart",
+    "position": "Software Engineering Intern",
+    "location": "Dallas, TX",
+    "salary": null,
+    "link": "https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR110079",
+    "age": "4d",
+    "category": "Other"
+  },
+  {
+    "id": "5e60ae346f39",
+    "company": "GE HealthCare",
+    "position": "Edison Engineering Development Program Intern - Software",
+    "location": "Waukesha, WI",
+    "salary": null,
+    "link": "https://gehc.wd5.myworkdayjobs.com/en-US/gehc_externalsite/job/Waukesha/Edison-Engineering-Development-Program-Intern---Software_R4043933-2",
+    "age": "4d",
+    "category": "Other"
+  },
+  {
+    "id": "4be8f2533372",
+    "company": "HyperLight",
+    "position": "Software Engineer Intern",
+    "location": "Cambridge, MA",
+    "salary": null,
+    "link": "https://apply.workable.com/hyperlight/j/5581EA0668/",
+    "age": "4d",
+    "category": "Other"
+  },
+  {
+    "id": "92849ad8d5d9",
+    "company": "NXP Semiconductors",
+    "position": "AI / Software Engineering Intern - Fall 2026",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/Austin-Oakhill-Office/AI---Software-Engineering-Intern---Fall-2026_R-10064807",
+    "age": "4d",
+    "category": "Other"
+  },
+  {
+    "id": "9cbe9858cce2",
+    "company": "Deepgram",
+    "position": "Software Engineering- Internship - Fall 2026/Summer 2027",
+    "location": "Remote - USA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/deepgram/dc8693b5-72ce-4ca3-ab15-9c8434d35da1",
+    "age": "6d",
+    "category": "Other"
+  },
+  {
+    "id": "40b30552acde",
+    "company": "Composio",
+    "position": "Full-stack Intern",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/composio/4d819015-0b9a-466f-9b41-8e1cc1e5b6d9",
+    "age": "7d",
+    "category": "Other"
+  },
+  {
+    "id": "032a8efcdee9",
+    "company": "Chevron",
+    "position": "2026-2027 Information Technology - Software Engineer - Intern",
+    "location": "Houston, TX",
+    "salary": null,
+    "link": "https://chevron.wd5.myworkdayjobs.com/en-US/university/job/Houston-Texas-United-States-of-America/XMLNAME-2026-2027-Information-Technology---Software-Engineer---Intern_R000072398-1",
+    "age": "8d",
+    "category": "Other"
+  },
+  {
+    "id": "8b88559abbb6",
+    "company": "Netic",
+    "position": "Full-Stack Software Engineer - Product - Intern - 2026-2027",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/netic/f291394a-f3c5-4f46-9b87-77aea3d487ef",
+    "age": "8d",
+    "category": "Other"
+  },
+  {
+    "id": "f76fb10ba701",
+    "company": "Netic",
+    "position": "Software Engineer - Agent Platform - Intern - 2026-2027",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/netic/b0ea7aab-8eea-4d31-96f9-278364180ae7",
+    "age": "8d",
+    "category": "Other"
+  },
+  {
+    "id": "e468deaf393a",
+    "company": "Old Mission Capital",
+    "position": "Software Engineer - 2027 Internship Program - June Start",
+    "location": "Chicago, IL",
+    "salary": null,
+    "link": "https://www.oldmissioncapital.com/careers/?gh_jid=7796180003",
+    "age": "8d",
+    "category": "Other"
+  },
+  {
+    "id": "548bc1a7ef60",
+    "company": "The Trade Desk",
+    "position": "2027 North America Software Engineering Internship",
+    "location": "Denver, CO +2",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/thetradedesk/jobs/5187605007",
+    "age": "8d",
+    "category": "Other"
+  },
+  {
+    "id": "5b7b2e0688ef",
+    "company": "Cirrus Logic",
+    "position": "Fall 2026 Co-Op Embedded Software Test Engineer - MG",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://jobs.eu.lever.co/cirrus/2926421c-691a-434a-ae59-c828e7fcbf5b",
+    "age": "9d",
+    "category": "Other"
+  },
+  {
+    "id": "02fff0b404d4",
+    "company": "Cloudflare",
+    "position": "Software Engineer Intern - Fall 2026 - Austin - TX",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://boards.greenhouse.io/cloudflare/jobs/8052785?gh_jid=8052785",
+    "age": "9d",
+    "category": "Other"
+  },
+  {
+    "id": "3bcb8b81a4c4",
+    "company": "Copart",
+    "position": "Software Engineering Intern",
+    "location": "Dallas, TX",
+    "salary": null,
+    "link": "https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109897",
+    "age": "9d",
+    "category": "Other"
+  },
+  {
+    "id": "7b42d421c1b2",
+    "company": "Copart",
+    "position": "Software Engineering Intern",
+    "location": "Dallas, TX",
+    "salary": null,
+    "link": "https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109673",
+    "age": "9d",
+    "category": "Other"
+  },
+  {
+    "id": "38183121ec9e",
+    "company": "Copart",
+    "position": "Software Engineering Intern",
+    "location": "Dallas, TX",
+    "salary": null,
+    "link": "https://copart.wd12.myworkdayjobs.com/en-US/copart/job/Dallas-TX---Headquarters/Software-Engineering-Intern_JR109689",
+    "age": "9d",
+    "category": "Other"
+  },
+  {
+    "id": "3e31bc9b145c",
+    "company": "Formlabs",
+    "position": "Test Software - Manufacturing Intern - Fall 2026",
+    "location": "Somerville, MA +1",
+    "salary": null,
+    "link": "https://careers.formlabs.com/job/8065543/apply/?gh_jid=8065543",
+    "age": "9d",
+    "category": "Other"
+  },
+  {
+    "id": "3c93a045531b",
+    "company": "Tencent",
+    "position": "Cloud Media Services Intern",
+    "location": "Bellevue, WA",
+    "salary": null,
+    "link": "https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/US-Washington-Bellevue/Cloud-Media-Services-Intern_R107794",
+    "age": "9d",
+    "category": "Other"
+  },
+  {
+    "id": "98f3667f2efc",
+    "company": "DRW",
+    "position": "Software Developer Intern",
+    "location": "Chicago, IL",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/drweng/jobs/7992936",
+    "age": "10d",
+    "category": "Other"
+  },
+  {
+    "id": "8fd8489e9a12",
+    "company": "Joby Aviation",
+    "position": "Software Engineer Intern - Air Taxi",
+    "location": "San Carlos, CA",
+    "salary": null,
+    "link": "https://careers-jobyaviation.icims.com/jobs/5168/software-engineer-intern----air-taxi/job",
+    "age": "10d",
+    "category": "Other"
+  },
+  {
+    "id": "221dd6e293d9",
+    "company": "Persona AI",
+    "position": "Teleoperation Software Engineering Internship",
+    "location": "Pensacola, FL +1",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/persona.ai/6078fafd-ba34-4c89-b260-7eb15be3cb9c",
+    "age": "10d",
+    "category": "Other"
+  },
+  {
+    "id": "84e7435a1dea",
+    "company": "Serval",
+    "position": "Software Engineer Intern",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/serval/d7fb089c-db8a-4877-a5f3-73a09e67f54b",
+    "age": "10d",
+    "category": "Other"
+  },
+  {
+    "id": "c5db26053b49",
+    "company": "Black Cape",
+    "position": "US Military Skillbridge Internship - Software Engineer_Arlington - VA",
+    "location": "Arlington, VA",
+    "salary": null,
+    "link": "http://blackcape.applytojob.com/apply/7o6mmAYryt/US-Military-Skillbridge-Internship-Software-EngineerArlington-VA",
+    "age": "13d",
+    "category": "Other"
+  },
+  {
+    "id": "b2141841125f",
+    "company": "Pylon",
+    "position": "Software Engineer - Intern",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/pylon-labs/fcea8b52-81f1-4b0c-b575-d7b180faec4d",
+    "age": "13d",
+    "category": "Other"
+  },
+  {
+    "id": "ecbf02cfbdec",
+    "company": "ING",
+    "position": "Graduate Internship - NFR AI Agent Developer",
+    "location": "Waco, TX +1",
+    "salary": null,
+    "link": "https://ing.wd3.myworkdayjobs.com/en-US/icsgblcor/job/ACT-Amsterdam---Acanthus/Graduate-Internship---NFR-AI-Agent-Developer-1_REQ-10117758",
+    "age": "14d",
+    "category": "Other"
+  },
+  {
+    "id": "e3c9fdc7f417",
+    "company": "Manhattan Associates",
+    "position": "A.I. Developer Co-Op - Boston - MA",
+    "location": "USA",
+    "salary": null,
+    "link": "https://manh.wd5.myworkdayjobs.com/en-US/campus/job/US---Home-Office/AI-Developer-Co-Op--Boston--MA-_16931",
+    "age": "14d",
+    "category": "Other"
+  },
+  {
+    "id": "5bf42b21eb3e",
+    "company": "Vital Lyfe",
+    "position": "Software Engineering Internship - Fall 2026",
+    "location": "Los Angeles, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/vital-lyfe/43a79d8f-a8bb-4c57-a411-1bac946128af",
+    "age": "14d",
+    "category": "Other"
+  },
+  {
+    "id": "268c38671ced",
+    "company": "Tower Research Capital",
+    "position": "Quantitative Developer Intern - Summer 2027",
+    "location": "Chicago, IL +1",
+    "salary": null,
+    "link": "https://www.tower-research.com/open-positions/?gh_jid=8044334",
+    "age": "18d",
+    "category": "Other"
+  },
+  {
+    "id": "293e5e51f7df",
+    "company": "Eulerity",
+    "position": "Website Developer & Content Marketing Intern - AI & Automation",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/eulerity/jobs/4694300006",
+    "age": "20d",
+    "category": "Other"
+  },
+  {
+    "id": "d9ed2a4eee67",
+    "company": "Blackstar Computers",
+    "position": "Embedded Systems Engineering Intern - Summer 2026",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/blackstar/2599ef82-3105-4a12-a1d6-63b9f6ed567a",
+    "age": "21d",
+    "category": "Other"
+  },
+  {
+    "id": "07d5ab0b330a",
+    "company": "Tencent",
+    "position": "Cloud Media Services Intern",
+    "location": "Palo Alto, CA",
+    "salary": null,
+    "link": "https://tencent.wd1.myworkdayjobs.com/en-US/tencent_careers/job/US-California-Palo-Alto/Cloud-Media-Services-Intern_R106872",
+    "age": "21d",
+    "category": "Other"
+  },
+  {
+    "id": "399a4e5d2b36",
+    "company": "Palantir",
+    "position": "Forward Deployed Software Engineer - Internship - Intel",
+    "location": "Washington, DC",
+    "salary": null,
+    "link": "https://jobs.lever.co/palantir/9e40d77f-b07c-437b-98e7-def9b0184d89",
+    "age": "22d",
+    "category": "Other"
+  },
+  {
+    "id": "6c073821e91c",
+    "company": "MyJunior AI",
+    "position": "Software Engineering Intern — Fall 2026",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/junior/23ee686b-d305-4ac9-860d-16c99ddb4891",
+    "age": "23d",
+    "category": "Other"
+  },
+  {
+    "id": "026119e2006f",
+    "company": "Palantir",
+    "position": "Forward Deployed Software Engineer - Internship - Commercial",
+    "location": "Chicago, IL",
+    "salary": null,
+    "link": "https://jobs.lever.co/palantir/d5486403-c050-4920-b2e0-91b69b61ebb2",
+    "age": "23d",
+    "category": "Other"
+  },
+  {
+    "id": "d9d8632d53f5",
+    "company": "Sony",
+    "position": "Software Engineer Intern",
+    "location": "San Diego, CA",
+    "salary": null,
+    "link": "https://sonyglobal.wd1.myworkdayjobs.com/en-US/sonyglobalcareers/job/San-Diego/Software-Engineer-Intern_JR-119282",
+    "age": "23d",
+    "category": "Other"
+  },
+  {
+    "id": "2eef792aaa96",
+    "company": "Charles River Analytics",
+    "position": "Software QA Tester Intern/Co-op - Fall 2026",
+    "location": "Cambridge, MA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/charlesriveranalytics90/jobs/8035563",
+    "age": "24d",
+    "category": "Other"
+  },
+  {
+    "id": "6c9eaeefa21a",
+    "company": "Halo Industries",
+    "position": "Software Engineer Intern - Machine Learning Workflow",
+    "location": "Santa Clara, CA",
+    "salary": null,
+    "link": "https://apply.workable.com/halo-industries/j/29728B1DAF/",
+    "age": "25d",
+    "category": "Other"
+  },
+  {
+    "id": "32d876a07c88",
+    "company": "CTGT",
+    "position": "Software Engineering Intern - Summer 2027",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/ctgt/f657c2f5-125e-42b6-a68a-646bbea3d155",
+    "age": "27d",
+    "category": "Other"
+  },
+  {
+    "id": "e956270bce68",
+    "company": "Zipline",
+    "position": "Software Engineer Intern - Fall 2026",
+    "location": "South San Francisco, CA",
+    "salary": null,
+    "link": "https://www.zipline.com/open-roles?gh_jid=7787509003",
+    "age": "27d",
+    "category": "Other"
+  },
+  {
+    "id": "039dc15fc3cf",
+    "company": "Astranis Space Technologies",
+    "position": "Hardware Design Intern - Software Defined Radio Team - Fall 2026",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/astranis/jobs/4691163006",
+    "age": "29d",
+    "category": "Other"
+  },
+  {
+    "id": "00d57f55beb4",
+    "company": "Binance.US",
+    "position": "Software Engineering Intern",
+    "location": "USA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/binance.us/c23e9aa3-0daa-4170-a5a7-b03aaa031895",
+    "age": "29d",
+    "category": "Other"
+  },
+  {
+    "id": "9dd7ca23b594",
+    "company": "Palantir",
+    "position": "Year at Palantir - Forward Deployed Software Engineer - Internship - Commercial",
+    "location": "Chicago, IL",
+    "salary": null,
+    "link": "https://jobs.lever.co/palantir/75cc1c09-8ebd-44c8-b3bc-d122cd1fecb3",
+    "age": "29d",
+    "category": "Other"
+  },
+  {
+    "id": "ad1826d5436a",
+    "company": "Altasciences",
+    "position": "Process Innovation - Software Engineering Intern",
+    "location": "Overland Park, KS",
+    "salary": null,
+    "link": "https://altasciences.wd1.myworkdayjobs.com/en-US/careers/job/Overland-Park-Kansas/Process-Innovation---Software-Engineering-Intern_R102750",
+    "age": "30d",
+    "category": "Other"
+  },
+  {
+    "id": "344850ed9388",
+    "company": "Formlabs",
+    "position": "Manufacturing Test Software Intern - Fall 2026",
+    "location": "Somerville, MA",
+    "salary": null,
+    "link": "https://careers.formlabs.com/job/8021679/apply/?gh_jid=8021679",
+    "age": "30d",
+    "category": "Other"
+  },
+  {
+    "id": "9cf2b2749ea7",
+    "company": "Altom Transport",
+    "position": "Fall Software Development Intern",
+    "location": "Hammond, IN",
+    "salary": null,
+    "link": "https://apply.workable.com/altom-transport/j/9FC654F05E/",
+    "age": "31d",
+    "category": "Other"
+  },
+  {
+    "id": "24fa39e07f03",
+    "company": "Cirrus Logic",
+    "position": "Fall 2026 Co-Op - Embedded Software AI Intern",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://jobs.eu.lever.co/cirrus/3d6df577-91f6-4b58-9e7f-c982e49ff515",
+    "age": "31d",
+    "category": "Other"
+  },
+  {
+    "id": "28be6969ed08",
+    "company": "FightCamp",
+    "position": "Firmware Intern - Fall 2026",
+    "location": "San Jose, CA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/figureai/jobs/4691070006",
+    "age": "31d",
+    "category": "Other"
+  },
+  {
+    "id": "8b0034e77763",
+    "company": "Persistent Systems",
+    "position": "Intern - Embedded Software Engineer - Fall 2026",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://careers-persistentsystems.icims.com/jobs/2272/intern---embedded-software-engineer-%28fall-2026%29/job",
+    "age": "32d",
+    "category": "Other"
+  },
+  {
+    "id": "77380fa7f46d",
+    "company": "iHerb",
+    "position": "Software Development Intern",
+    "location": "Remote - USA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/iherb/jobs/7776154003",
+    "age": "36d",
+    "category": "Other"
+  },
+  {
+    "id": "3677c2e6d5a5",
+    "company": "SoloPulse",
+    "position": "Software Engineer Intern/Co-Op - Fall 2026",
+    "location": "Peachtree Corners, GA",
+    "salary": null,
+    "link": "https://jobs.lever.co/solopulseco/00fbde18-a387-4c9f-97d4-77059aec7b56",
+    "age": "37d",
+    "category": "Other"
+  },
+  {
+    "id": "1461111caf10",
+    "company": "Synchrony Bank",
+    "position": "Software Engineer Intern - Fall 2026",
+    "location": "Remote - Guangzhou, China +1",
+    "salary": null,
+    "link": "https://synchronyfinancial.wd5.myworkdayjobs.com/en-US/university/job/Canton-Engagement-Hub-OH/Software-Engineer-Intern---Fall-2026_2601751-1",
+    "age": "37d",
+    "category": "Other"
+  },
+  {
+    "id": "f478fb63bf8c",
+    "company": "Lila Sciences",
+    "position": "Co-Op - Software Product Management",
+    "location": "Cambridge, MA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/lilasciences/jobs/4286512009",
+    "age": "38d",
+    "category": "Other"
+  },
+  {
+    "id": "ada4ed4575ac",
+    "company": "Anduril",
+    "position": "2027 Software Engineer Intern",
+    "location": "Atlanta, GA +5",
+    "salary": null,
+    "link": "https://boards.greenhouse.io/andurilindustries/jobs/5148079007?gh_jid=5148079007",
+    "age": "43d",
+    "category": "Other"
+  },
+  {
+    "id": "af1bf3743716",
+    "company": "Circleback",
+    "position": "Software Engineering Intern - Summer 2027",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/circleback/2bb6be67-d1a8-42f7-bb1b-64ee36bf613f",
+    "age": "43d",
+    "category": "Other"
+  },
+  {
+    "id": "4871560192dc",
+    "company": "Centerfield",
+    "position": "Software Engineer Intern",
+    "location": "Los Angeles, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/centerfield/3279e803-56ab-4e12-8168-c2fd60bc8e60",
+    "age": "44d",
+    "category": "Other"
+  },
+  {
+    "id": "c249278355a6",
+    "company": "Zipline",
+    "position": "Enterprise Systems Software Engineer Intern - Fall 2026",
+    "location": "South San Francisco, CA",
+    "salary": null,
+    "link": "https://www.zipline.com/open-roles?gh_jid=7767667003",
+    "age": "44d",
+    "category": "Other"
+  },
+  {
+    "id": "946544fb72cc",
+    "company": "Bosch",
+    "position": "Hardware & Embedded Research Intern - Fall 2026",
+    "location": "Sunnyvale, CA",
+    "salary": null,
+    "link": "https://jobs.smartrecruiters.com/BoschGroup/744000131150005-hardware-embedded-research-intern-fall-2026-?oga=true",
+    "age": "45d",
+    "category": "Other"
+  },
+  {
+    "id": "10f6a00fe53a",
+    "company": "GE Vernova",
+    "position": "Grid Automation & Software Intern",
+    "location": "Remote",
+    "salary": null,
+    "link": "https://gevernova.wd5.myworkdayjobs.com/en-US/only_confidential_executive_recruiting/job/Remote/Grid-Automation---Software-Intern_R5041706-3",
+    "age": "45d",
+    "category": "Other"
+  },
+  {
+    "id": "48dfde4df1c3",
+    "company": "Nidec",
+    "position": "Software Engineer Co-Op",
+    "location": "WPE, MO",
+    "salary": null,
+    "link": "https://nidec.wd1.myworkdayjobs.com/en-US/nidec/job/North-AmericaUSAMissouriSt-Louis---WPE-MO/Software-Engineer-Co-Op_R0015871",
+    "age": "45d",
+    "category": "Other"
+  },
+  {
+    "id": "b4c6def7d61c",
+    "company": "GE Aerospace",
+    "position": "Embedded Systems Engineer Co-op - Bohemia - NY - Spring 2027",
+    "location": "Bohemia, NY",
+    "salary": null,
+    "link": "https://geaerospace.wd5.myworkdayjobs.com/en-US/ge_externalsite/job/Bohemia/Embedded-Systems-Engineer-Co-op--Bohemia--NY----Spring-2027_R5035583-1",
+    "age": "46d",
+    "category": "Other"
+  },
+  {
+    "id": "fd29408eb158",
+    "company": "GE Vernova",
+    "position": "Grid Automation & Software Intern",
+    "location": "Remote",
+    "salary": null,
+    "link": "https://gevernova.wd5.myworkdayjobs.com/en-US/only_confidential_executive_recruiting/job/Remote/Grid-Automation---Software-Intern_R5041709",
+    "age": "46d",
+    "category": "Other"
+  },
+  {
+    "id": "2af530176436",
+    "company": "Zipline",
+    "position": "Embedded Software Engineer Intern - Fall 2026",
+    "location": "South San Francisco, CA",
+    "salary": null,
+    "link": "https://www.zipline.com/open-roles?gh_jid=7765240003",
+    "age": "48d",
+    "category": "Other"
+  },
+  {
+    "id": "7e10d454af74",
+    "company": "Altom Transport",
+    "position": "Fall Software Development Intern",
+    "location": "Hammond, IN",
+    "salary": null,
+    "link": "https://apply.workable.com/altom-transport/j/8536165C7B/",
+    "age": "51d",
+    "category": "Other"
+  },
+  {
+    "id": "510f5eb953ba",
+    "company": "Nightwing",
+    "position": "Software / Hardware Engineering - Intern",
+    "location": "Annapolis Junction, MD",
+    "salary": null,
+    "link": "https://nwis.wd12.myworkdayjobs.com/en-US/nw/job/Annapolis-Junction-MD/Software---Hardware-Engineering---Intern_JR101733",
+    "age": "51d",
+    "category": "Other"
+  },
+  {
+    "id": "535981cc2f50",
+    "company": "Beacon Software",
+    "position": "Software Engineering Intern",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/beaconsoftware/2452d342-a069-4eda-adbe-9df296808ca1",
+    "age": "52d",
+    "category": "Other"
+  },
+  {
+    "id": "b8efd0f95595",
+    "company": "Clerkie",
+    "position": "Software Engineer Internship",
+    "location": "Remote",
+    "salary": null,
+    "link": "http://getfiber.ai/careers?gh_jid=5152467007",
+    "age": "52d",
+    "category": "Other"
+  },
+  {
+    "id": "4de2894bee8d",
+    "company": "Fluxergy",
+    "position": "Firmware Engineer Intern",
+    "location": "Irvine, CA",
+    "salary": null,
+    "link": "https://jobs.lever.co/fluxergy-2/c592763e-56ba-4d20-b751-3a4574470eec",
+    "age": "52d",
+    "category": "Other"
+  },
+  {
+    "id": "3d63eabf083e",
+    "company": "Pony.ai",
+    "position": "Software Engineer Intern - Generalist",
+    "location": "Fremont, CA",
+    "salary": null,
+    "link": "https://apply.workable.com/pony-dot-ai/j/BA5FFDBC71/",
+    "age": "56d",
+    "category": "Other"
+  },
+  {
+    "id": "b6cf0fb05b86",
+    "company": "Altom Transport",
+    "position": "Fall Software Development Intern",
+    "location": "Hammond, IN",
+    "salary": null,
+    "link": "https://apply.workable.com/altom-transport/j/1E3C4A9408/",
+    "age": "57d",
+    "category": "Other"
+  },
+  {
+    "id": "2235c33cdf30",
+    "company": "Prospect Equities",
+    "position": "Backend / Frontend Developer Intern",
+    "location": "Chicago, IL",
+    "salary": null,
+    "link": "http://prospectequities.applytojob.com/apply/XTbzSAcNtg/Backend-Frontend-Developer-Intern",
+    "age": "57d",
+    "category": "Other"
+  },
+  {
+    "id": "5352174d9e4c",
+    "company": "Base Power Company",
+    "position": "Quantitative Developer Intern",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/base-power/b6b2332e-1226-4575-b2c9-9e5258f2540e",
+    "age": "58d",
+    "category": "Other"
+  },
+  {
+    "id": "f09ca6a96faf",
+    "company": "Base Power Company",
+    "position": "Software Engineering Intern",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/base-power/5353ea33-57d4-46fa-9a96-e392a3f841bc",
+    "age": "58d",
+    "category": "Other"
+  },
+  {
+    "id": "746346340174",
+    "company": "Base Power Company",
+    "position": "Firmware Engineering Intern",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/base-power/a8ee9a66-e90b-42c2-a4a2-28d997c3e8c7",
+    "age": "58d",
+    "category": "Other"
+  },
+  {
+    "id": "ef4f2c6193d9",
+    "company": "Stevens Capital Management",
+    "position": "Developer Internship",
+    "location": "Radnor, PA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/scm/jobs/721888",
+    "age": "61d",
+    "category": "Other"
+  },
+  {
+    "id": "b77e9c5af5e5",
+    "company": "Reply",
+    "position": "Android Developer Intern",
+    "location": "Detroit, MI",
+    "salary": null,
+    "link": "https://jobs.lever.co/reply/0fb458db-7cb9-4bfd-b9b6-c1c681316061",
+    "age": "63d",
+    "category": "Other"
+  },
+  {
+    "id": "3cc50dedf185",
+    "company": "Reply",
+    "position": "iOS Developer Intern",
+    "location": "Detroit, MI",
+    "salary": null,
+    "link": "https://jobs.lever.co/reply/191d1794-e52a-4573-a2d0-2952b76f9cd5",
+    "age": "63d",
+    "category": "Other"
+  },
+  {
+    "id": "678b7c8bdc50",
+    "company": "Brunswick",
+    "position": "Computer Graphics Software Developer Intern",
+    "location": "Champaign, IL",
+    "salary": null,
+    "link": "https://brunswick.wd1.myworkdayjobs.com/en-US/search/job/Champaign-IL/Computer-Graphics-Software-Developer-Intern_JR-050234",
+    "age": "64d",
+    "category": "Other"
+  },
+  {
+    "id": "488a9adc7187",
+    "company": "Plus",
+    "position": "Software Engineer Intern- Runtime - Robotics",
+    "location": "Santa Clara, CA",
+    "salary": null,
+    "link": "https://jobs.lever.co/plus-2/a3bcdba6-b0d0-46ba-9af3-a387926a6fb4",
+    "age": "64d",
+    "category": "Other"
+  },
+  {
+    "id": "7096831bd6e4",
+    "company": "Plus",
+    "position": "Software Engineer Intern - Robotics",
+    "location": "Santa Clara, CA",
+    "salary": null,
+    "link": "https://jobs.lever.co/plus-2/7a1afea9-b468-4b7c-a508-185e8e4032db",
+    "age": "64d",
+    "category": "Other"
+  },
+  {
+    "id": "3909d849793c",
+    "company": "Etched",
+    "position": "Chip Simulation Software Intern",
+    "location": "San Jose, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/etched/27e5bd6b-9357-45f0-9e79-cfa2bf4eeba8",
+    "age": "65d",
+    "category": "Other"
+  },
+  {
+    "id": "c24641d174e5",
+    "company": "Terranova",
+    "position": "Embedded Systems Intern",
+    "location": "Berkeley, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/terranova/8fdce1f7-a1df-4e64-8f10-c78771a399da",
+    "age": "65d",
+    "category": "Other"
+  },
+  {
+    "id": "5d3f502c8c02",
+    "company": "Saronic Technologies",
+    "position": "Software Engineer Intern - Fall 2026",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/saronic/1c74957f-0895-415b-9324-08b0994747d7",
+    "age": "66d",
+    "category": "Other"
+  },
+  {
+    "id": "d7111f91fc1f",
+    "company": "Plus",
+    "position": "Full Stack Engineer Intern",
+    "location": "Santa Clara, CA",
+    "salary": null,
+    "link": "https://jobs.lever.co/plus-2/b69c9b6d-483f-41d4-b487-97c99332ca40",
+    "age": "70d",
+    "category": "Other"
+  },
+  {
+    "id": "20d86e75d414",
+    "company": "Astranis Space Technologies",
+    "position": "Software Engineer- Backend Intern - Fall 2026",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/astranis/jobs/4681183006",
+    "age": "71d",
+    "category": "Other"
+  },
+  {
+    "id": "587c9048b11a",
+    "company": "kos.ai",
+    "position": "Software Engineer Intern",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/kos.ai/efab6ffb-9658-47f7-8b5f-a295c55957d3",
+    "age": "77d",
+    "category": "Other"
+  },
+  {
+    "id": "e245adc6d4e4",
+    "company": "Stoke Space",
+    "position": "Spring 2027 Internship - Software",
+    "location": "Kent, WA",
+    "salary": null,
+    "link": "https://stokespace.com/careers/current-openings?gh_jid=5987663004",
+    "age": "80d",
+    "category": "Other"
+  },
+  {
+    "id": "a4874b2afe90",
+    "company": "Cohere",
+    "position": "Software Engineer Intern - Fall / Winter 2026",
+    "location": "Canada +1",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/cohere/8c035d3d-081d-4c8a-914a-72f4efaad254",
+    "age": "83d",
+    "category": "Other"
+  },
+  {
+    "id": "c673243185aa",
+    "company": "Gemini",
+    "position": "Software Engineering Intern - Fall 2026",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://boards.greenhouse.io/embed/job_app?for=gemini&token=7875125&gh_jid=7875125",
+    "age": "83d",
+    "category": "Other"
+  },
+  {
+    "id": "104238234db7",
+    "company": "Apptronik",
+    "position": "Robotics Software Intern - Real-Time Controls",
+    "location": "Austin, TX",
+    "salary": null,
+    "link": "https://boards.greenhouse.io/apptronik/jobs/5985132004?gh_jid=5985132004",
+    "age": "85d",
+    "category": "Other"
+  },
+  {
+    "id": "c3a9badf550c",
+    "company": "Astranis Space Technologies",
+    "position": "Flight Software Intern - Fall 2026",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/astranis/jobs/4619283006",
+    "age": "85d",
+    "category": "Other"
+  },
+  {
+    "id": "bafd6138b94a",
+    "company": "Rainmaker",
+    "position": "Software Engineering Intern",
+    "location": "El Segundo, CA",
+    "salary": null,
+    "link": "https://jobs.lever.co/make-rain/b45f954e-19df-45b1-8748-c8ae442a2e8b",
+    "age": "90d",
+    "category": "Other"
+  },
+  {
+    "id": "92dc7e416633",
+    "company": "Palantir",
+    "position": "Year at Palantir - Forward Deployed Software Engineer - Internship - USG",
+    "location": "Washington, DC",
+    "salary": null,
+    "link": "https://jobs.lever.co/palantir/5c4c65c5-77da-4d36-856c-4ade87631019",
+    "age": "91d",
+    "category": "Other"
+  },
+  {
+    "id": "43a304176377",
+    "company": "ASM",
+    "position": "Software Engineering Intern - Spring 2027",
+    "location": "Phoenix, AZ +1",
+    "salary": null,
+    "link": "https://www.asm.com/open-vacancies/?gh_jid=4830113101",
+    "age": "92d",
+    "category": "Other"
+  },
+  {
+    "id": "e7c0c5ad43c2",
+    "company": "Blockhouse",
+    "position": "Rust Developer Intern - Summer 2026",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/blockhouse/42a3066f-683c-4b32-b097-5047e89dd12c",
+    "age": "93d",
+    "category": "Other"
+  },
+  {
+    "id": "5e80d2094c9f",
+    "company": "Blackstar Computers",
+    "position": "SWE Internship - Summer 2026",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/blackstar/cdf1a311-09a2-4591-85ce-606bf0120700",
+    "age": "94d",
+    "category": "Other"
+  },
+  {
+    "id": "706f13e5ae91",
+    "company": "LEGO",
+    "position": "Firmware Engineering Co-Op - Fall 2026",
+    "location": "Boston, MA",
+    "salary": null,
+    "link": "https://lego.wd103.myworkdayjobs.com/en-US/lego_executive/job/Boston-Hub/Firmware-Engineering-Intern_0000031568",
+    "age": "95d",
+    "category": "Other"
+  },
+  {
+    "id": "de839a06f0ea",
+    "company": "Hermeus",
+    "position": "Software Engineering Intern - HIL - Fall 2026",
+    "location": "Atlanta, GA",
+    "salary": null,
+    "link": "https://jobs.lever.co/hermeus/10d69ef6-a754-42ab-833c-76adf01367bf",
+    "age": "97d",
+    "category": "Other"
+  },
+  {
+    "id": "317c7f10260f",
+    "company": "Hermeus",
+    "position": "Software Engineering Intern - Modeling & Simulation - Fall 2026",
+    "location": "Los Angeles, CA",
+    "salary": null,
+    "link": "https://jobs.lever.co/hermeus/49f7cf3f-bf66-44ca-bf97-ee0f7180a68d",
+    "age": "97d",
+    "category": "Other"
+  },
+  {
+    "id": "438ae18d5c5e",
+    "company": "Cadence",
+    "position": "Software Intern",
+    "location": "San Jose, CA",
+    "salary": null,
+    "link": "https://cadence.wd1.myworkdayjobs.com/en-US/external_careers/job/SAN-JOSE/Software-Intern_R53282-1",
+    "age": "99d",
+    "category": "Other"
+  },
+  {
+    "id": "dcc297a69ea9",
+    "company": "Latent Defense",
+    "position": "Software Engineer Intern",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/latent%20defense/54841e7d-d80a-4c2f-8c44-d492fe8eb487",
+    "age": "99d",
+    "category": "Other"
+  },
+  {
+    "id": "87cff729a93d",
+    "company": "Neuralink",
+    "position": "Electrical Engineer Intern - Implant Embedded Systems",
+    "location": "Austin, TX +1",
+    "salary": null,
+    "link": "https://boards.greenhouse.io/neuralink/jobs/7702527003?gh_jid=7702527003",
+    "age": "99d",
+    "category": "Other"
+  },
+  {
+    "id": "a178dff327d1",
+    "company": "Auctor",
+    "position": "Software Engineering Intern",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/auctor/9d67c881-3ca7-4616-a059-e94c03e19607",
+    "age": "101d",
+    "category": "Other"
+  },
+  {
+    "id": "75da945f77d4",
+    "company": "Eulerity",
+    "position": "Mobile iOS Developer Intern",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/eulerity/jobs/4671025006",
+    "age": "107d",
+    "category": "Other"
+  },
+  {
+    "id": "ad8a6ce7e01a",
+    "company": "Eulerity",
+    "position": "Android Developer Intern",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/eulerity/jobs/4671031006",
+    "age": "107d",
+    "category": "Other"
+  },
+  {
+    "id": "46c8a89642d0",
+    "company": "Notion",
+    "position": "Software Engineer Intern - Fall 2026",
+    "location": "San Francisco, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/notion/5b15697c-fa91-4511-9482-c98a6ff29f90",
+    "age": "108d",
+    "category": "Other"
+  },
+  {
+    "id": "552e0351aaf3",
+    "company": "Human Computer Lab",
+    "position": "Intern - Software/ML Engineering",
+    "location": "San Francisco, CA +1",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/human-computer-lab/7d13ae27-1f02-4d9b-8d39-e3d9d67df705",
+    "age": "111d",
+    "category": "Other"
+  },
+  {
+    "id": "519f38ba48d5",
+    "company": "Aquatic Capital Management",
+    "position": "Software Engineer - Intern - Summer 2027",
+    "location": "Chicago, IL",
+    "salary": null,
+    "link": "https://job-boards.greenhouse.io/aquaticcapitalmanagement/jobs/8489233002",
+    "age": "113d",
+    "category": "Other"
+  },
+  {
+    "id": "534ef01477db",
+    "company": "Hermeus",
+    "position": "Software Engineering Intern - HMI - Fall 2026",
+    "location": "Atlanta, GA",
+    "salary": null,
+    "link": "https://jobs.lever.co/hermeus/a3a1f0ea-6a4f-42e5-81c8-3b34dac22a67",
+    "age": "114d",
+    "category": "Other"
+  },
+  {
+    "id": "4829934cfbb0",
+    "company": "Motorola Solutions",
+    "position": "Intern - Embedded Software - System - and Test Engineer - 2026",
+    "location": "Irvine, CA",
+    "salary": null,
+    "link": "https://motorolasolutions.wd5.myworkdayjobs.com/en-US/careers/job/Irvine-CA/Intern---Embedded-Software--System--and-Test-Engineer---2026_R62372",
+    "age": "116d",
+    "category": "Other"
+  },
+  {
+    "id": "a7719f2d5811",
+    "company": "Ellipsis Labs",
+    "position": "Software Engineer - 2027 Interns",
+    "location": "New York City, NY",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/ellipsislabs/02136b22-35b1-4b3d-8bef-567c3380a849",
+    "age": "119d",
+    "category": "Other"
+  },
+  {
+    "id": "6878fbf51d17",
+    "company": "Odys Aviation",
+    "position": "Robotics & Embedded Systems Intern",
+    "location": "Long Beach, CA",
+    "salary": null,
+    "link": "https://jobs.ashbyhq.com/odys-aviation/d15b1f56-d160-403e-8d12-90f531eb490f",
+    "age": "119d",
+    "category": "Other"
+  }
+]
