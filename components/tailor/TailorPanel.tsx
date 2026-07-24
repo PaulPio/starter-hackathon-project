@@ -9,11 +9,12 @@ import { ErrorState } from "@/components/shared/ErrorState";
 import { LoadingState } from "@/components/shared/LoadingState";
 import { DownloadButton } from "./DownloadButton";
 import { ResumeDiffView } from "./ResumeDiffView";
-import type { RankedJob, TailorResponse } from "@/lib/schemas";
+import type { RankedJob, ResumeProfile, TailorResponse } from "@/lib/schemas";
 
 const LOADING_MESSAGES = ["Reading the listing…", "Rewriting your bullets…", "Polishing the summary…"];
 
 export function TailorPanel({
+  profile,
   job,
   status,
   tailored,
@@ -21,6 +22,7 @@ export function TailorPanel({
   onClose,
   onRetry,
 }: {
+  profile: ResumeProfile | null;
   job: RankedJob | null;
   status: "idle" | "loading" | "success" | "error";
   tailored: TailorResponse | null;
@@ -41,10 +43,10 @@ export function TailorPanel({
 
         {status === "loading" && <LoadingState messages={LOADING_MESSAGES} />}
         {status === "error" && <ErrorState message={error ?? "Couldn't tailor this resume."} onRetry={onRetry} />}
-        {status === "success" && tailored && job && (
+        {status === "success" && tailored && job && profile && (
           <div className="flex flex-col gap-6">
             <ResumeDiffView tailored={tailored} />
-            <DownloadButton job={job} tailored={tailored} />
+            <DownloadButton profile={profile} job={job} tailored={tailored} />
           </div>
         )}
       </SheetContent>

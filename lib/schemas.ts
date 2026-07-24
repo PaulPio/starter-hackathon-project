@@ -2,6 +2,12 @@ import { z } from "zod";
 
 export const ResumeProfileSchema = z.object({
   name: z.string().nullable(),
+  contact: z.object({
+    email: z.string().nullable(),
+    phone: z.string().nullable(),
+    linkedin: z.string().nullable(),
+    github: z.string().nullable(),
+  }),
   skills: z.array(z.string()),
   experienceLevel: z.enum([
     "student",
@@ -85,3 +91,32 @@ export const TailorResponseSchema = z.object({
   ),
 });
 export type TailorResponse = z.infer<typeof TailorResponseSchema>;
+
+export const ResumePdfDataSchema = z.object({
+  name: z.string().nullable(),
+  contact: z.object({
+    email: z.string().nullable(),
+    phone: z.string().nullable(),
+    linkedin: z.string().nullable(),
+    github: z.string().nullable(),
+  }),
+  tailoredSummary: z.string(),
+  skills: z.array(z.string()),
+  education: z.array(
+    z.object({
+      school: z.string(),
+      degree: z.string().nullable(),
+      field: z.string().nullable(),
+      gradDate: z.string().nullable(),
+    })
+  ),
+  experience: z.array(
+    z.object({
+      company: z.string(),
+      title: z.string(),
+      bullets: z.array(z.string()),
+    })
+  ),
+  targetJobLabel: z.string(),
+});
+export type ResumePdfData = z.infer<typeof ResumePdfDataSchema>;

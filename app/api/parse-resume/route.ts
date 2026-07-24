@@ -13,6 +13,7 @@ export const maxDuration = 60;
 function fallbackProfile(): ResumeProfile {
   return {
     name: null,
+    contact: { email: null, phone: null, linkedin: null, github: null },
     skills: [],
     experienceLevel: "student",
     education: [],

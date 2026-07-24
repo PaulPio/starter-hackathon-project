@@ -5,6 +5,10 @@ const SYSTEM_PROMPT = `You are an expert resume reviewer helping students and ea
 especially those without access to a campus career center or a curated pipeline of leads.
 Extract a structured profile from the resume text below, and perform a resume health check.
 
+Contact info: extract "email", "phone", "linkedin", and "github" from the resume text if present
+(linkedin/github as full URLs or usernames as written — don't invent or guess ones that aren't
+in the text). Use null for any that aren't present.
+
 Health-check guidance:
 - Many strong candidates get filtered out by automated screening for formatting or
   phrasing reasons, not skill gaps. Flag those issues plainly and kindly.

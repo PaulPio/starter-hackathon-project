@@ -232,6 +232,7 @@ export function ResumeFitApp({ initialJobs }: { initialJobs: JobListing[] }) {
       )}
 
       <TailorPanel
+        profile={state.profile}
         job={state.selectedJob}
         status={state.tailorPhase}
         tailored={state.tailored}
