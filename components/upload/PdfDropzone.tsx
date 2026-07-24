@@ -1,8 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { FileText, Sparkles, Upload } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Sparkles, Upload } from "lucide-react";
 import { MAX_RESUME_FILE_BYTES } from "@/lib/config";
 
 function isPdf(file: File): boolean {
@@ -59,16 +58,16 @@ export function PdfDropzone({
           const file = e.dataTransfer.files?.[0];
           if (file) validateAndSelect(file);
         }}
-        className={`flex flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed p-10 text-center transition-colors focus:outline-none focus:ring-2 focus:ring-ring ${
-          isDragging
-            ? "border-primary bg-primary/5"
-            : "border-zinc-300 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-600"
+        className={`flex flex-col items-center justify-center gap-3.5 border-2 border-dashed border-ink px-6 py-14 text-center ${
+          isDragging ? "bg-brand/5" : "bg-transparent"
         } ${disabled ? "pointer-events-none opacity-60" : "cursor-pointer"}`}
       >
-        <Upload className="h-8 w-8 text-zinc-400" />
+        <div className="flex size-[52px] items-center justify-center border-2 border-ink text-brand">
+          <Upload className="size-6" strokeWidth={2} />
+        </div>
         <div>
-          <p className="font-medium">Drop your resume here, or click to browse</p>
-          <p className="text-sm text-zinc-500">PDF only, up to 5MB</p>
+          <p className="m-0 text-[15.5px] font-bold">Drop your resume here, or click to browse</p>
+          <p className="mt-1 m-0 text-[13.5px] text-muted-foreground">PDF only, up to 5MB</p>
         </div>
         <input
           ref={inputRef}
@@ -90,26 +89,15 @@ export function PdfDropzone({
         </p>
       )}
 
-      <div className="flex items-center gap-3 text-sm text-zinc-500">
-        <div className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" />
-        or
-        <div className="h-px flex-1 bg-zinc-200 dark:bg-zinc-800" />
-      </div>
-
-      <Button
+      <button
         type="button"
-        variant="outline"
-        className="gap-2"
         disabled={disabled}
         onClick={onUseSample}
+        className="flex items-center justify-center gap-2 border-2 border-ink bg-card px-4 py-3 text-sm font-bold text-foreground disabled:opacity-60"
       >
-        <Sparkles className="h-4 w-4" />
+        <Sparkles className="size-4 text-brand" strokeWidth={2} />
         Try with a sample resume
-      </Button>
-      <p className="flex items-start gap-1.5 text-xs text-zinc-500">
-        <FileText className="mt-0.5 h-3.5 w-3.5 shrink-0" />
-        Runs through the exact same pipeline as your own resume — nothing is faked.
-      </p>
+      </button>
     </div>
   );
 }

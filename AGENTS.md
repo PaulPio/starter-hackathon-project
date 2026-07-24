@@ -75,7 +75,11 @@ lib/
                                 interaction goes through. Read this before adding new
                                 LLM calls or touching prompts.
   schemas.ts                   every zod schema — source of truth for data shapes
-  resume.ts / rank.ts / tailor.ts   one file per pipeline stage: prompt + call function
+  tailor.ts                    faithful light edits + optional GitHub repo add; bullets matched
+                                by originalIndex (not string echo). Full JD text is NOT available
+                                from SpeedyApply — see TODO in this file.
+  tailor-sanitize.ts           pure sanitizers (index bullets, skills, project order) + tests
+                                via scripts/test-tailor-sanitize.ts
   github.ts                    tailor-time public repo fetch (username parse + GitHub API)
   resume-pdf.ts                runtime PDF GENERATION — hard one-page layout (no page 2),
                                 base-resume-like sections (no AI summary on the PDF)

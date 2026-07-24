@@ -3,11 +3,17 @@
 import { useState } from "react";
 import { Download, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  assembleProjectBullets,
+  mergeProjectsForPdf,
+  MAX_WORK_BULLETS,
+} from "@/lib/tailor-sanitize";
 import type { Project, RankedJob, ResumeProfile, ResumePdfData, TailorResponse } from "@/lib/schemas";
 
-const MAX_GITHUB_PROJECTS_ON_PDF = 1;
+const MAX_PROJECTS_ON_PDF = 3;
 const MAX_BULLETS_PER_ROLE = 4;
 const MAX_BULLETS_PER_PROJECT = 2;
+const MIN_BULLETS_PER_PROJECT = 2;
 
 function normalizeName(name: string): string {
   return name.trim().toLowerCase().replace(/[\s_-]+/g, "");
@@ -33,35 +39,28 @@ function mergeResumeProjects(profile: ResumeProfile, tailored: TailorResponse): 
     seen.add(key);
 
     const tailoredProject = tailoredByName.get(key);
-    if (!tailoredProject) {
-      fromResume.push({
-        ...project,
-        url: null,
-        bullets: project.bullets.slice(0, MAX_BULLETS_PER_PROJECT),
-      });
-      continue;
-    }
-    const tailoredByOriginal = new Map(
-      tailoredProject.bullets.map((b) => [b.original, b.tailored] as const)
-    );
     fromResume.push({
       name: project.name,
       url: null,
       technologies: project.technologies,
-      bullets: project.bullets
-        .map((bullet) => tailoredByOriginal.get(bullet) ?? bullet)
-        .slice(0, MAX_BULLETS_PER_PROJECT),
+      bullets: assembleProjectBullets(
+        project.bullets,
+        tailoredProject?.bullets ?? [],
+        MAX_BULLETS_PER_PROJECT,
+        MIN_BULLETS_PER_PROJECT
+      ),
     });
   }
 
-  const fromGithub: Project[] = tailored.addedGithubProjects.slice(0, MAX_GITHUB_PROJECTS_ON_PDF).map((p) => ({
+  const fromGithub: Project[] = tailored.addedGithubProjects.map((p) => ({
     name: p.name,
     url: null,
     bullets: p.bullets.slice(0, MAX_BULLETS_PER_PROJECT),
     technologies: p.technologies.slice(0, 4),
   }));
 
-  return [...fromResume, ...fromGithub];
+  // GitHub replacements lead; remaining resume projects fill leftover one-page slots.
+  return mergeProjectsForPdf(fromResume, fromGithub, MAX_PROJECTS_ON_PDF).map((slot) => slot.project);
 }
 
 function mergeSkills(profile: ResumeProfile, tailored: TailorResponse): string[] {
@@ -80,24 +79,31 @@ function mergeSkills(profile: ResumeProfile, tailored: TailorResponse): string[]
   return out.length > 0 ? out : profile.skills;
 }
 
-// Prefer near-identical content to the uploaded resume: same roles, lightly tailored
-// bullets, optional project reorder/drop + skills reorder/drop. Summary is UI-only.
-function buildResumePdfData(profile: ResumeProfile, job: RankedJob, tailored: TailorResponse): ResumePdfData {
-  const tailoredByOriginal = new Map(tailored.tailoredBullets.map((b) => [b.original, b.tailored]));
+function mergeExperienceBullets(profile: ResumeProfile, tailored: TailorResponse) {
+  const byIndex = new Map(tailored.tailoredBullets.map((b) => [b.originalIndex, b.tailored] as const));
+  let flatIndex = 0;
 
+  return profile.workExperience.map((exp) => ({
+    company: exp.company,
+    title: exp.title,
+    bullets: exp.bullets
+      .map((bullet) => {
+        const idx = flatIndex++;
+        if (idx >= MAX_WORK_BULLETS) return bullet;
+        return byIndex.get(idx) ?? bullet;
+      })
+      .slice(0, MAX_BULLETS_PER_ROLE),
+  }));
+}
+
+function buildResumePdfData(profile: ResumeProfile, job: RankedJob, tailored: TailorResponse): ResumePdfData {
   return {
     name: profile.name,
     contact: profile.contact,
     tailoredSummary: "",
     skills: mergeSkills(profile, tailored),
     education: profile.education,
-    experience: profile.workExperience.map((exp) => ({
-      company: exp.company,
-      title: exp.title,
-      bullets: exp.bullets
-        .map((bullet) => tailoredByOriginal.get(bullet) ?? bullet)
-        .slice(0, MAX_BULLETS_PER_ROLE),
-    })),
+    experience: mergeExperienceBullets(profile, tailored),
     projects: mergeResumeProjects(profile, tailored),
     targetJobLabel: `Tailored for ${job.position} at ${job.company}`,
   };
@@ -139,13 +145,17 @@ export function DownloadButton({
 
   return (
     <div className="flex flex-col gap-2">
-      <Button className="gap-2" onClick={handleDownload} disabled={status === "generating"}>
+      <Button
+        className="gap-2 self-start border-2 border-ink bg-brand px-5 py-2.5 text-sm font-bold text-white shadow-hard hover:bg-brand"
+        onClick={handleDownload}
+        disabled={status === "generating"}
+      >
         {status === "generating" ? (
           <Loader2 className="h-4 w-4 animate-spin" />
         ) : (
           <Download className="h-4 w-4" />
         )}
-        {status === "generating" ? "Generating PDF…" : "Download tailored resume (PDF)"}
+        {status === "generating" ? "Generating PDF…" : "Download tailored resume"}
       </Button>
       {status === "error" && (
         <p className="text-sm text-destructive">Couldn&apos;t generate the PDF — try again.</p>

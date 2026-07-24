@@ -1,65 +1,81 @@
-import { ExternalLink, Sparkles } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import type { RankedJob } from "@/lib/schemas";
 
-function scoreColor(score: number | null): string {
-  if (score === null) return "bg-zinc-200 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300";
-  if (score >= 80) return "bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300";
-  if (score >= 50) return "bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300";
-  return "bg-zinc-100 text-zinc-700 dark:bg-zinc-900 dark:text-zinc-400";
+function scoreStyle(score: number | null): { color: string; bg: string } {
+  if (score === null) return { color: "text-muted-foreground", bg: "bg-surface-alt" };
+  if (score >= 80) return { color: "text-score-high", bg: "bg-score-high-bg" };
+  if (score >= 50) return { color: "text-score-mid", bg: "bg-score-mid-bg" };
+  return { color: "text-muted-foreground", bg: "bg-surface-alt" };
 }
 
-export function JobCard({ job, onTailor }: { job: RankedJob; onTailor: () => void }) {
+export function JobCard({
+  job,
+  onTailor,
+  featured,
+}: {
+  job: RankedJob;
+  onTailor: () => void;
+  featured?: boolean;
+}) {
+  const sc = scoreStyle(job.fitScore);
+
   return (
-    <Card>
-      <CardContent className="flex flex-col gap-3">
-        <div className="flex items-start justify-between gap-3">
-          <div>
-            <p className="font-medium leading-tight">{job.position}</p>
-            <p className="text-sm text-zinc-500">
-              {job.company} · {job.location}
-              {job.salary ? ` · ${job.salary}` : ""}
-            </p>
-          </div>
-          <span
-            className={`shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold tabular-nums ${scoreColor(job.fitScore)}`}
-          >
-            {job.fitScore ?? "—"}
-          </span>
+    <div
+      className={`brutal-press flex flex-col gap-2.5 border-2 border-ink bg-card p-[18px] shadow-hard ${
+        featured ? "md:col-span-2" : ""
+      }`}
+    >
+      <div className="flex items-start justify-between gap-2.5">
+        <div>
+          <p className="m-0 text-sm font-bold leading-snug">{job.position}</p>
+          <p className="mt-1 m-0 text-[12.5px] text-muted-foreground">
+            {job.company} · {job.location}
+            {job.salary ? ` · ${job.salary}` : ""}
+          </p>
         </div>
+        <div
+          className={`flex size-[38px] shrink-0 items-center justify-center border-2 border-ink text-[13px] font-extrabold tabular-nums ${sc.bg} ${sc.color}`}
+        >
+          {job.fitScore ?? "—"}
+        </div>
+      </div>
 
-        {job.why && <p className="text-sm text-zinc-700 dark:text-zinc-300">{job.why}</p>}
+      {job.why && (
+        <p className="m-0 text-[12.5px] leading-relaxed text-muted-foreground">{job.why}</p>
+      )}
 
-        {job.matchedSkills.length > 0 && (
-          <div className="flex flex-wrap gap-1.5">
-            {job.matchedSkills.map((skill) => (
-              <Badge key={skill} variant="outline" className="text-xs">
-                {skill}
-              </Badge>
-            ))}
-          </div>
-        )}
-
-        <div className="mt-1 flex items-center justify-between gap-3">
-          <span className="text-xs text-zinc-400">Posted {job.age} ago</span>
-          <div className="flex gap-2">
-            <a
-              href={job.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={buttonVariants({ size: "sm", variant: "ghost", className: "gap-1.5" })}
+      {job.matchedSkills.length > 0 && (
+        <div className="flex flex-wrap gap-1.5">
+          {job.matchedSkills.map((skill) => (
+            <span
+              key={skill}
+              className="border border-ink px-2 py-0.5 text-[11px] text-muted-foreground"
             >
-              Apply <ExternalLink className="h-3.5 w-3.5" />
-            </a>
-            <Button size="sm" className="gap-1.5" onClick={onTailor}>
-              <Sparkles className="h-3.5 w-3.5" />
-              Tailor
-            </Button>
-          </div>
+              {skill}
+            </span>
+          ))}
         </div>
-      </CardContent>
-    </Card>
+      )}
+
+      <div className="mt-0.5 flex items-center justify-between gap-2.5">
+        <span className="text-[11px] text-text-faint">Posted {job.age} ago</span>
+        <div className="flex gap-2">
+          <a
+            href={job.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-ink px-2.5 py-1.5 text-xs font-bold text-foreground no-underline"
+          >
+            Apply
+          </a>
+          <button
+            type="button"
+            onClick={onTailor}
+            className="border-2 border-ink bg-brand px-2.5 py-1.5 text-xs font-bold text-white"
+          >
+            Tailor
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
