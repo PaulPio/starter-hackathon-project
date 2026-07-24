@@ -89,7 +89,15 @@ export const RankingResponseSchema = z.object({
 });
 export type RankingResponse = z.infer<typeof RankingResponseSchema>;
 
-const BulletDiffSchema = z.object({
+const BulletDiffLlmSchema = z.object({
+  originalIndex: z.number().int(),
+  tailored: z.string(),
+  reason: z.string(),
+});
+
+/** Client-facing bullet diff — `original` is filled server-side from originalIndex. */
+export const BulletDiffSchema = z.object({
+  originalIndex: z.number().int(),
   original: z.string(),
   tailored: z.string(),
   reason: z.string(),
@@ -134,6 +142,43 @@ export const TailorResponseSchema = z.object({
     .default([]),
 });
 export type TailorResponse = z.infer<typeof TailorResponseSchema>;
+
+/** Schema passed to the LLM — bullets use originalIndex, not echoed original text. */
+export const TailorLlmResponseSchema = z.object({
+  tailoredSummary: z.string(),
+  tailoredBullets: z.array(BulletDiffLlmSchema),
+  tailoredProjects: z
+    .array(
+      z.object({
+        name: z.string(),
+        url: z.string().nullable(),
+        bullets: z.array(BulletDiffLlmSchema),
+      })
+    )
+    .default([]),
+  projectOrder: z.array(z.string()).default([]),
+  removedProjects: z
+    .array(
+      z.object({
+        name: z.string(),
+        reason: z.string(),
+      })
+    )
+    .default([]),
+  tailoredSkills: z.array(z.string()).default([]),
+  skillsReason: z.string().default(""),
+  addedGithubProjects: z
+    .array(
+      z.object({
+        name: z.string(),
+        url: z.string(),
+        bullets: z.array(z.string()),
+        technologies: z.array(z.string()),
+        reason: z.string(),
+      })
+    )
+    .default([]),
+});
 
 export const ResumePdfDataSchema = z.object({
   name: z.string().nullable(),

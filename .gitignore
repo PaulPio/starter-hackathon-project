@@ -41,4 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+/Modernist SaaS Redesign Brief
+/Modernist SaaS Redesign Brief.zip
+Modernist*.zip
 node_modules
